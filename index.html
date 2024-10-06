@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personalized Workout Plan Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SWOOSH: Personalized Workout Plan Generator</h1>
+        <form id="workout-form">
+            <label for="fitness-level">Fitness Level:</label>
+            <select id="fitness-level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="goals">Fitness Goals:</label>
+            <select id="goals" required>
+                <option value="strength">Strength Training</option>
+                <option value="cardio">Cardio</option>
+                <option value="flexibility">Flexibility</option>
+            </select>
+
+            <label for="equipment">Available Equipment:</label>
+            <input type="text" id="equipment" placeholder="e.g., Dumbbells, Resistance Bands" required>
+
+            <button type="submit">Generate Workout Plan</button>
+        </form>
+
+        <div id="workout-plan" class="workout-plan"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
